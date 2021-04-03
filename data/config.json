@@ -1,0 +1,23 @@
+{
+    "bot": {
+        "activity": "Running installations",
+        "prefix": "!",
+        "token": "INSERT DISCORD BOT TOKEN HERE"
+    },
+    "embed": {
+        "colors": {
+            "success": "#00d131",
+            "warning": "#ed7905",
+            "error": "#d11100",
+            "default": "#2c3f94"
+        },
+        "preview": {
+            "footer": "© Installation Manager - 2021",
+            "thumbnail": "https://trello-backgrounds.s3.amazonaws.com/5276d58a9b600b2d4e007a62/192x192/ffd41ddc0925cb8263ccb4e826d55ebc/pterodactyl-mobile-icon.png",
+            "timestamp": true
+        }
+    },
+    "installation": {
+        "apikey": "INSERT API KEY HERE"
+    }
+}

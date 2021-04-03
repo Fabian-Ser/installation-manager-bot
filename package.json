@@ -1,0 +1,17 @@
+{
+    "name": "installation-manager",
+    "version": "1.0.0",
+    "description": "This bot can execute pterodactyl installations, handled by https://pterodactyl.mc-node.net",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon"
+    },
+    "author": "Fabian#6580",
+    "license": "ISC",
+    "dependencies": {
+        "axios": "^0.21.1",
+        "discord.js": "^12.5.1",
+        "fs": "0.0.1-security",
+        "path": "^0.12.7"
+    }
+}

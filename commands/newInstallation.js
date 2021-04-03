@@ -49,10 +49,15 @@ module.exports = {
             }
 
             let count = im.getInstallsAmount()
+            let everyonerole = message.guild.roles.cache.find(role => role.name == "@everyone")
             message.guild.channels.create(`Installation-${count}`, {
                 type: 'text',
                 permissionOverwrites: [{
                         id: message.guild.id,
+                        deny: ['VIEW_CHANNEL'],
+                    },
+                    {
+                        id: everyonerole.id,
                         deny: ['VIEW_CHANNEL'],
                     },
                     {

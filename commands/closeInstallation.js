@@ -14,10 +14,15 @@ module.exports = {
                         await new Promise(r => setTimeout(r, 1000));
                     }
                     let cat = message.guild.channels.cache.find(cat => cat.name === "storage")
+                    let everyonerole = message.guild.roles.cache.find(role => role.name == "@everyone")
                     cat.overwritePermissions([{
                         id: message.guild.id,
                         deny: ['VIEW_CHANNEL', 'SEND_MESSAGES'],
                     }]);
+                    cat.overwritePermissions([{
+                        id: everyonerole.id,
+                        deny: ['VIEW_CHANNEL', 'SEND_MESSAGES'],
+                    }])
                     message.channel.setParent(cat.id)
                 } else {
                     message.channel.delete()
